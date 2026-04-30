@@ -407,7 +407,7 @@ export default function App() {
             
             <div className="space-y-4 relative z-10">
               <a 
-                href="mailto:hello@example.com" 
+                href="michaellimisi7@gmail.com" 
                 className="group flex items-center justify-between w-full p-4 rounded-xl border border-zinc-200 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition-all font-medium text-zinc-800 shadow-sm"
               >
                 <span className="flex items-center gap-3">
@@ -417,7 +417,7 @@ export default function App() {
                 <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity translate-x-2 group-hover:translate-x-0" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/michael-limisi-455678243/" 
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between w-full p-4 rounded-xl border border-zinc-200 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition-all font-medium text-zinc-800 shadow-sm"
