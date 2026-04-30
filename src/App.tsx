@@ -133,7 +133,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-50/80 backdrop-blur-md border-b border-zinc-200">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           <span className="font-mono font-semibold text-zinc-900 tracking-tight">
-            TSE.Portfolio
+            MAL.TSE.Portfolio
           </span>
           <div className="flex gap-6 text-sm font-medium text-zinc-600">
             <a
