@@ -35,8 +35,8 @@ const SYSTEMS = [
       outcome: ["↓ Time to competency", "↑ Troubleshooting quality"]
     },
     architecture: ["Ticket", "Reproduction", "AI Guidance", "Customer Response", "Knowledge Capture"],
-    screenshots: ["customer-queue.png", "reproduction-view.png"],
-    demo: "support-simulator-demo.mp4"
+    screenshots: ["/customer-queue.png", "/reproduction-view.png"],
+    demo: "/support-simulator-demo.mp4"
   },
   {
     id: "03",
@@ -50,8 +50,8 @@ const SYSTEMS = [
       outcome: ["↓ Investigation time", "↑ Consistency"]
     },
     architecture: ["Customer Request", "Issue Extraction", "Root Cause", "Resolution", "Agent Actions"],
-    screenshots: ["support-logic-input.png", "support-logic-output.png", "support-logic-flow.png"],
-    demo: "support-logic-analyzer-demo.mp4"
+    screenshots: ["/support-logic-input.png", "/support-logic-output.png", "/support-logic-flow.png"],
+    demo: "/support-logic-analyzer-demo.mp4"
   },
   {
     id: "04",
@@ -65,8 +65,8 @@ const SYSTEMS = [
       outcome: ["↓ Research effort", "↑ Opportunity discovery"]
     },
     architecture: ["Reddit", "Make.com", "FastAPI", "AI Analysis", "Make.com", "Airtable", "Email"],
-    screenshots: ["lead-engine-airtable.png", "lead-engine-email.png", "lead-engine-flow.png"],
-    demo: "lead-engine-demo.mp4"
+    screenshots: ["/lead-engine-airtable.png", "/lead-engine-email.png", "/lead-engine-flow.png"],
+    demo: "/lead-engine-demo.mp4"
   },
   {
     id: "05",
