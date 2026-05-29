@@ -11,36 +11,36 @@ import {
 } from "lucide-react";
 
 const SYSTEMS = [
+  // {
+  //   id: "01",
+  //   title: "AI Technical Support Copilot",
+  //   tag: "Support Operations",
+  //   icon: <BrainCircuit className="w-5 h-5" />,
+  //   description:
+  //     "Support conversations → AI Analysis → Resolution → Knowledge Creation",
+  //   stack: ["Make.com", "Python", "APIs", "MCP"],
+  //   overview: {
+  //     problem:
+  //       "Support teams spend hours investigating repetitive issues and documenting resolutions.",
+  //     outcome: [
+  //       "↓ Investigation effort",
+  //       "↓ Repetitive documentation",
+  //       "↑ Resolution consistency",
+  //       "↑ Knowledge reuse",
+  //     ],
+  //   },
+  //   architecture: [
+  //     "Zendesk",
+  //     "Python",
+  //     "MCP Layer",
+  //     "Make.com",
+  //     "Knowledge Engine",
+  //   ],
+  //   screenshots: ["[INSERT UI SCREENSHOT]", "[INSERT SYSTEM ARCHITECTURE]"],
+  //   demo: "[INSERT 60s DEMO]",
+  // },
   {
     id: "01",
-    title: "AI Technical Support Copilot",
-    tag: "Support Operations",
-    icon: <BrainCircuit className="w-5 h-5" />,
-    description:
-      "Support conversations → AI Analysis → Resolution → Knowledge Creation",
-    stack: ["Make.com", "Python", "APIs", "MCP"],
-    overview: {
-      problem:
-        "Support teams spend hours investigating repetitive issues and documenting resolutions.",
-      outcome: [
-        "↓ Investigation effort",
-        "↓ Repetitive documentation",
-        "↑ Resolution consistency",
-        "↑ Knowledge reuse",
-      ],
-    },
-    architecture: [
-      "Zendesk",
-      "Python",
-      "MCP Layer",
-      "Make.com",
-      "Knowledge Engine",
-    ],
-    screenshots: ["[INSERT UI SCREENSHOT]", "[INSERT SYSTEM ARCHITECTURE]"],
-    demo: "[INSERT 60s DEMO]",
-  },
-  {
-    id: "02",
     title: "Support Engineering Simulation Platform",
     tag: "AI-assisted training, issue reproduction, and resolution workflows for technical support teams.",
     icon: <Cpu className="w-5 h-5" />,
@@ -63,7 +63,7 @@ const SYSTEMS = [
     demo: "/support-simulator-demo.mp4",
   },
   {
-    id: "03",
+    id: "02",
     title: "Support Logic Analyzer",
     tag: "Uses AI to extract root causes, technical signals, and executable support actions from unstructured customer conversations.",
     icon: <Code2 className="w-5 h-5" />,
@@ -90,7 +90,7 @@ const SYSTEMS = [
     demo: "/support-logic-analyzer-demo.mp4",
   },
   {
-    id: "04",
+    id: "03",
     title: "AI Lead Intelligence Engine",
     tag: "Growth Operations",
     icon: <Database className="w-5 h-5" />,
@@ -119,7 +119,7 @@ const SYSTEMS = [
     demo: "/lead-engine-demo.mp4",
   },
   {
-    id: "05",
+    id: "04",
     title: "Autonomous Knowledge Builder",
     tag: "Support Intelligence",
     icon: <Workflow className="w-5 h-5" />,
