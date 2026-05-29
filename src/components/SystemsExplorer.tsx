@@ -65,10 +65,10 @@ const SYSTEMS = [
   {
     id: "03",
     title: "Support Logic Analyzer",
-    tag: "Issue Intelligence",
+    tag: "Uses AI to extract root causes, technical signals, and executable support actions from unstructured customer conversations.",
     icon: <Code2 className="w-5 h-5" />,
     description:
-      "Transforms messy customer requests into executable support plans.",
+      "Converts complex customer issues into structured, actionable resolution workflows.",
     stack: ["AI", "Workflow Automation"],
     overview: {
       problem:

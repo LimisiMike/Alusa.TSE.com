@@ -26,7 +26,7 @@ export function CommandBar() {
         </div>
         
         <div className="hidden md:flex items-center gap-1 p-1.5 bg-[#111827]/80 backdrop-blur-md border border-[#1F2937] rounded-xl shadow-2xl">
-          <a href="#resume" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#94A3B8] hover:text-[#E5E7EB] hover:bg-[#1F2937] transition-all"><FileText className="w-4 h-4" /> Resume</a>
+          {/* <a href="#resume" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#94A3B8] hover:text-[#E5E7EB] hover:bg-[#1F2937] transition-all"><FileText className="w-4 h-4" /> Resume</a> */}
           <a href="#systems" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#94A3B8] hover:text-[#E5E7EB] hover:bg-[#1F2937] transition-all"><LayoutDashboard className="w-4 h-4" /> Systems</a>
           <a href="mailto:michaellimisi7@gmail.com" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#94A3B8] hover:text-[#E5E7EB] hover:bg-[#1F2937] transition-all"><Mail className="w-4 h-4" /> Work With Me</a>
           <a href="#contact" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#94A3B8] hover:text-[#E5E7EB] hover:bg-[#1F2937] transition-all"><Mail className="w-4 h-4" /> Contact</a>
@@ -221,10 +221,10 @@ export function Footer() {
         </div>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
-          <a href="#resume" className="flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 rounded-xl bg-white text-[#090B10] hover:bg-gray-200 transition-all font-bold text-lg">
+          {/* <a href="#resume" className="flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 rounded-xl bg-white text-[#090B10] hover:bg-gray-200 transition-all font-bold text-lg">
             <Terminal className="w-5 h-5" />
             Resume
-          </a>
+          </a> */}
           <a href="https://www.linkedin.com/in/michael-limisi-455678243/" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 rounded-xl bg-[#111827] border border-[#374151] text-white hover:bg-[#1F2937] transition-all font-bold text-lg">
             <Linkedin className="w-5 h-5 text-[#5B8CFF]" />
             LinkedIn
