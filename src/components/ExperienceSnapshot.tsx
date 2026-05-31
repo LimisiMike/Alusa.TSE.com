@@ -25,7 +25,7 @@ export function ExperienceSnapshot() {
             <div className="flex flex-col gap-2">
               <h3 className="text-[#00C896] font-mono text-sm tracking-widest uppercase mt-2 mb-2">TECH & TOOLS</h3>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Make.com', 'APIs', 'MCP', 'Zendesk', 'Intercom', 'Jira', 'Notion'].map(skill => (
+                {['Python', 'Make.com', 'APIs', 'MCP', 'ChatGPT', 'Claude', 'Gemini', 'OpenAI API', 'Zendesk', 'Intercom', 'Jira', 'Notion'].map(skill => (
                   <span key={skill} className="px-4 py-2 bg-[#1F2937] border border-[#374151] rounded-xl text-sm font-medium text-[#E5E7EB]">
                     {skill}
                   </span>
