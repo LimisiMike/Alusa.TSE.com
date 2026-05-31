@@ -1,6 +1,11 @@
 import { CommandBar, OperatingSystem, CapabilityMap, BusinessImpact, Footer } from './components/Sections';
 import { Hero } from './components/Hero';
 import { SystemsExplorer } from './components/SystemsExplorer';
+import { MissionStatement } from './components/MissionStatement';
+import { ExperienceSnapshot } from './components/ExperienceSnapshot';
+import { WhyTeamsBringMeIn } from './components/WhyTeamsBringMeIn';
+import { CurrentlyBuilding } from './components/CurrentlyBuilding';
+import { RequestDemo } from './components/RequestDemo';
 
 export default function App() {
   return (
@@ -10,9 +15,19 @@ export default function App() {
       
       <CommandBar />
 
-      <main className="relative z-10 flex flex-col gap-32 pb-32">
+      <main className="relative z-10 flex flex-col gap-12 pb-32">
         <Hero />
-        <SystemsExplorer />
+        <MissionStatement />
+        <ExperienceSnapshot />
+        <WhyTeamsBringMeIn />
+        
+        <div className="pt-16 pb-8">
+          <SystemsExplorer />
+        </div>
+        
+        <CurrentlyBuilding />
+        <RequestDemo />
+        
         <OperatingSystem />
         <CapabilityMap />
         <BusinessImpact />
@@ -21,3 +36,4 @@ export default function App() {
     </div>
   );
 }
+
