@@ -17,10 +17,10 @@ export function ExperienceSnapshot() {
           <div className="space-y-8">
             <div className="flex flex-col gap-2">
               <h3 className="text-[#5B8CFF] font-mono text-sm tracking-widest uppercase mb-1">DOMAIN EXPERTISE</h3>
-              <p className="text-xl text-white font-medium">8+ Years Customer Support & Operations</p>
-              <p className="text-[#94A3B8] text-lg">API Troubleshooting & Technical Escalations</p>
-              <p className="text-[#94A3B8] text-lg">AI Workflow Automation</p>
-              <p className="text-[#94A3B8] text-lg">Production AI Systems Built</p>
+              <p className="text-xl text-white font-medium">8+ Years SaaS Support Engineering & Operations</p>
+              <p className="text-[#94A3B8] text-lg">1M+ User Platform Monitoring & Technical Issue Resolution</p>
+              <p className="text-[#94A3B8] text-lg">Agentic AI & Multi-Agent Systems Design and Development</p>
+              <p className="text-[#94A3B8] text-lg">AI Automation, MCP Integrations & LLM Workflow Engineering</p>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-[#00C896] font-mono text-sm tracking-widest uppercase mt-2 mb-2">TECH & TOOLS</h3>

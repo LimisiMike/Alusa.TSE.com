@@ -38,9 +38,9 @@ export function CurrentlyBuilding() {
           </div>
           <div className="relative z-10">
             <span className="px-3 py-1 bg-[#00C896]/10 text-[#00C896] border border-[#00C896]/20 rounded-full text-xs font-mono font-bold tracking-wider uppercase mb-6 inline-block">Active Prototype</span>
-            <h3 className="text-2xl font-bold text-white mb-4">AI Lead Intelligence Engine</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Lead Intelligence Engine v2 — Multi-Agent Sales Intelligence Platform</h3>
             <p className="text-[#94A3B8] leading-relaxed text-lg">
-              Automated workflows that monitor community spaces, extract high-intent buyer signals, and generate hyper-personalized outreach drafts directly into the CRM.
+              An Agentic AI platform that automates the entire lead intelligence and outreach lifecycle using Python, LLM orchestration, MCP-based integrations, workflow automation, and structured memory. The system deploys specialized AI agents to research prospects across Reddit, LinkedIn, company websites, and job postings, identify business pain points, score opportunities, generate personalized outreach, update CRM systems, and produce executive reports. Designed as a scalable, enterprise-ready automation framework that combines multi-agent collaboration, autonomous decision-making, and end-to-end business workflow execution.
             </p>
           </div>
         </motion.div>

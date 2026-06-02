@@ -14,11 +14,11 @@ export function Hero() {
             </div>
             
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-8">
-              Build AI Systems That <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5B8CFF] to-[#00C896] pb-2">Remove Operational Bottlenecks</span>
+              Designing AI Systems That <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5B8CFF] to-[#00C896] pb-2">Think, Act, and Scale</span>
             </h1>
             
             <p className="text-[#94A3B8] text-lg lg:text-xl leading-relaxed mb-10 max-w-xl">
-              I design AI-powered operational systems that reduce manual work, accelerate troubleshooting, and help teams scale without adding complexity.
+              I build agentic AI platforms that connect data, tools, and business processes—automating research, decision-making, reporting, and execution across operational workflows.
             </p>
             
             <div className="flex flex-wrap gap-4">

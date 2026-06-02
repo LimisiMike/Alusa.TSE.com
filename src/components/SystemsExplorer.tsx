@@ -65,15 +65,15 @@ const SYSTEMS = [
   {
     id: "02",
     title: "Support Logic Analyzer",
-    tag: "Uses AI to extract root causes, technical signals, and executable support actions from unstructured customer conversations.",
+    tag: "AI System for turning unstructured support conversations into actionable technical resolution flows",
     icon: <Code2 className="w-5 h-5" />,
     description:
       "Converts complex customer issues into structured, actionable resolution workflows.",
     stack: ["AI", "Workflow Automation"],
     overview: {
       problem:
-        "Customer requests are unstructured and lack context for immediate action.",
-      outcome: ["↓ Investigation time", "↑ Consistency"],
+        "Support teams spend significant time interpreting unstructured tickets before any real troubleshooting begins, slowing resolution and increasing inconsistency across agents.",
+      outcome: ["↓ Investigation time", "↑ Consistent troubleshooting across teams", "↓ cognitive load for support engineers"],
     },
     architecture: [
       "Customer Request",
@@ -100,7 +100,7 @@ const SYSTEMS = [
     overview: {
       problem:
         "Manual hunting and qualification of leads is slow and inefficient.",
-      outcome: ["↓ Research effort", "↑ Opportunity discovery"],
+      outcome: ["↓ Research effort", "↑ Opportunity discovery.", "↑ Outreach effectiveness"],
     },
     architecture: [
       "Reddit",
@@ -124,20 +124,23 @@ const SYSTEMS = [
     tag: "Support Intelligence",
     icon: <Workflow className="w-5 h-5" />,
     description:
-      "Support becomes compounding. Converts resolved tickets into searchable knowledge.",
-    stack: ["Notion APIs", "AI Analysis"],
+      "An AI-powered pipeline where engineers paste a chat log into Claude, which automatically extracts the core problem, root cause, and resolution steps, then publishes a structured incident report directly to a Notion Knowledge Base via Make.com automation — in seconds, with no manual writing.",
+    stack: ["Notion APIs", "AI Analysis", "FastAPI", "Make.com"],
     overview: {
-      problem: "Valuable troubleshooting steps are lost in closed tickets.",
-      outcome: ["Support becomes compounding", "↑ Knowledge accessibility"],
+      problem: "Engineering teams lose valuable incident knowledge in chat logs. When outages occur, the diagnosis and fix live in a Slack/Teams thread — never documented — forcing teams to re-investigate the same issues repeatedly.",
+      outcome: ["↓ Repeat diagnosis time.", "  Zero documentation overhead.", "↑ Resolution consistency.", "↑ Cross-team knowledge sharing."],
     },
     architecture: [
-      "Ticket",
-      "Context Extraction",
-      "Knowledge Engine",
-      "Structured KB",
+      "Claude (MCP Client)",
+      "Python (Knowledge Engine)",
+      "Make.com (Orchestration)",
+      "Notion(Structured KB)",
     ],
-    screenshots: ["[INSERT FLOW]", "[INSERT NOTION]", "[INSERT OUTPUT]"],
-    demo: "[INSERT VIDEO DEMO]",
+    screenshots: [
+      "/knowledge-builder-flow.png", 
+      "/knowledge-builder-notion.png", 
+      "/knowledge-builder-output.png"],
+    demo: "/knowledge-builder-demo.mp4",
   },
 ];
 function resolvePublicAsset(assetPath: string) {
