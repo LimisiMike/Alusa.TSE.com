@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { FileText, X } from "lucide-react";
+import { FileText, X, Download } from "lucide-react";
 
 export function ExperienceSnapshot() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -8,8 +8,8 @@ export function ExperienceSnapshot() {
   return (
     <section id="resume" className="max-w-7xl mx-auto px-6 w-full pt-8 pb-16">
       <div className="bg-[#111827] border border-[#1F2937] rounded-[2rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5B8CFF]/5 rounded-full blur-[80px] pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#00C896]/5 rounded-full blur-[80px] pointer-events-none transform -translate-x-1/2 translate-y-1/2"></div>
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5B8CFF]/5 rounded-full blur-[80px] pointer-events-none transform translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#00C896]/5 rounded-full blur-[80px] pointer-events-none transform -translate-x-1/2 translate-y-1/2" />
 
         <h2 className="text-3xl font-bold tracking-tight text-white mb-8 relative z-10">
           Experience Snapshot
@@ -19,39 +19,41 @@ export function ExperienceSnapshot() {
           <div className="space-y-8">
             <div className="flex flex-col gap-2">
               <h3 className="text-[#5B8CFF] font-mono text-sm tracking-widest uppercase mb-1">
-                DOMAIN EXPERTISE
+                Domain Expertise
               </h3>
               <p className="text-xl text-white font-medium">
-                8+ Years SaaS Support Engineering & Operations
+                8+ Years Support Engineering & AI Operations
               </p>
               <p className="text-[#94A3B8] text-lg">
-                1M+ User Platform Monitoring & Technical Issue Resolution
+                1M+ User Platform Monitoring & Incident Resolution
               </p>
               <p className="text-[#94A3B8] text-lg">
-                Agentic AI & Multi-Agent Systems Design and Development
+                Agentic AI & Multi-Agent Systems Design
               </p>
               <p className="text-[#94A3B8] text-lg">
-                AI Automation, MCP Integrations & LLM Workflow Engineering
+                MCP Integrations, LLM Workflow Engineering & RAG Pipelines
               </p>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-[#00C896] font-mono text-sm tracking-widest uppercase mt-2 mb-2">
-                TECH & TOOLS
+                Tech & Tools
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "Python",
                   "Make.com",
-                  "APIs",
+                  "Claude / Claude Code",
                   "MCP",
-                  "ChatGPT",
-                  "Claude",
-                  "Gemini",
+                  "LangChain",
+                  "LangGraph",
                   "OpenAI API",
-                  "Zendesk",
-                  "Intercom",
-                  "Jira",
+                  "RAG Pipelines",
+                  "REST APIs",
+                  "PostgreSQL",
+                  "AWS CloudWatch",
                   "Notion",
+                  "Zendesk",
+                  "Jira",
                 ].map((skill) => (
                   <span
                     key={skill}
@@ -64,18 +66,27 @@ export function ExperienceSnapshot() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-start md:items-end">
+          <div className="flex flex-col justify-center items-start md:items-end gap-4">
             <button
               onClick={() => setIsResumeOpen(true)}
-              className="flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-[#090B10] hover:bg-gray-200 transition-all font-bold text-lg shadow-xl"
+              className="flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-[#090B10] hover:bg-gray-100 transition-all font-bold text-lg shadow-xl"
             >
               <FileText className="w-5 h-5" />
               View Full Resume
             </button>
+            <a
+              href="resume.pdf"
+              download
+              className="flex items-center gap-3 px-8 py-4 rounded-xl bg-[#1F2937] text-[#E5E7EB] border border-[#374151] hover:border-[#5B8CFF]/50 hover:bg-[#2D3748] transition-all font-medium text-base"
+            >
+              <Download className="w-4 h-4" />
+              Download PDF
+            </a>
           </div>
         </div>
       </div>
 
+      {/* Resume modal */}
       <AnimatePresence>
         {isResumeOpen && (
           <motion.div
@@ -96,16 +107,25 @@ export function ExperienceSnapshot() {
               exit={{ scale: 0.95, opacity: 0, y: 20 }}
               className="w-full max-w-5xl h-[90vh] bg-white rounded-2xl overflow-hidden border border-[#374151] shadow-2xl relative z-[101] flex flex-col"
             >
-              <div className="bg-[#111827] text-[#94A3B8] p-4 text-center border-b border-[#374151] flex justify-between items-center px-6">
-                <span className="font-medium">Resume</span>
-                <a
-                  href="resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#5B8CFF] hover:text-[#8B5CF6] transition-colors flex items-center gap-2 text-sm font-bold"
-                >
-                  Open in New Tab
-                </a>
+              <div className="bg-[#111827] text-[#94A3B8] p-4 border-b border-[#374151] flex justify-between items-center px-6">
+                <span className="font-medium">Michael Alusa Limisi — Resume</span>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="resume.pdf"
+                    download
+                    className="text-[#00C896] hover:text-[#5B8CFF] transition-colors flex items-center gap-2 text-sm font-bold"
+                  >
+                    <Download className="w-4 h-4" /> Download
+                  </a>
+                  <a
+                    href="resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#5B8CFF] hover:text-[#8B5CF6] transition-colors flex items-center gap-2 text-sm font-bold"
+                  >
+                    Open in New Tab
+                  </a>
+                </div>
               </div>
               <object
                 data="resume.pdf"
@@ -114,9 +134,8 @@ export function ExperienceSnapshot() {
               >
                 <div className="flex flex-col items-center justify-center h-full text-center p-8 bg-[#090B10] text-[#94A3B8]">
                   <FileText className="w-16 h-16 mb-4 text-[#374151]" />
-                  <p className="mb-4 text-lg">
-                    Your browser might not support displaying PDFs within this
-                    preview.
+                  <p className="mb-6 text-lg">
+                    PDF preview isn't supported in this browser.
                   </p>
                   <a
                     href="resume.pdf"
@@ -124,7 +143,7 @@ export function ExperienceSnapshot() {
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#5B8CFF] text-white rounded-xl hover:bg-[#8B5CF6] transition-colors font-medium"
                   >
-                    Download / View PDF
+                    Open Resume PDF
                   </a>
                 </div>
               </object>
